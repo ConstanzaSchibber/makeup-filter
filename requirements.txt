@@ -3,4 +3,3 @@ streamlit_dynamic_filters
 pandas
 st_clickable_images
 pillow
-base64
