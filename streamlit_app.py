@@ -161,7 +161,7 @@ list_images = ['59332f.png',
 
 images = []
 for file in list_images:
-    file_path = './data/' + 'file'
+    file_path = './data/' + str(file)
     with open(file_path, "rb") as image:
         encoded = base64.b64encode(image.read()).decode()
         images.append(f"data:image/jpeg;base64,{encoded}")
