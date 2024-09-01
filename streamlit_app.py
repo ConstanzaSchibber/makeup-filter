@@ -110,7 +110,7 @@ st.markdown("""
 This app is designed to help you easily navigate through the makeup options by providing dynamic filtering options.
 """)
 
-df = pd.read_csv('/data/df_newcolors_for_streamlit.csv')
+df = pd.read_csv('./data/df_newcolors_for_streamlit.csv')
 df = df[df.ground_truth == 1]
 df = df[['category', 'brand', 'new_median_hex_circle', 'Circle', 'img_url']]
 
@@ -161,7 +161,7 @@ list_images = ['59332f.png',
 
 images = []
 for file in list_images:
-    file_path = 'data/' + 'file'
+    file_path = './data/' + 'file'
     with open(file_path, "rb") as image:
         encoded = base64.b64encode(image.read()).decode()
         images.append(f"data:image/jpeg;base64,{encoded}")
