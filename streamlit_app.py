@@ -92,8 +92,23 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Define the HTML and CSS for the text box
+text_box = """
+<div style="
+    background-color: d2c7d9; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;">
+    How It Was Built:
+     - Gathered makeup products via APIs and web scraping
+     - Predicted product colors from images using ML and GenAI
+     - Organized predicted shades into a user-friendly color palette
+</div>
+"""
+
 with st.sidebar:
-    ""
+    # Render the text box in Streamlit
+    st.markdown(text_box, unsafe_allow_html=True)
     ""
     ""
     ""
