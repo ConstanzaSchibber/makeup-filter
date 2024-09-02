@@ -94,6 +94,10 @@ st.markdown(
 
 with st.sidebar:
     "## Filter Makeup Options!"
+    ""
+    ""
+    ""
+    ""
 # Title and Introduction
 st.title("Discover Your Perfect Makeup Shade! 💄")
 st.markdown("""
