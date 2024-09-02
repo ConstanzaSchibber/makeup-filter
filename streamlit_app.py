@@ -116,7 +116,6 @@ with st.sidebar:
     ""
     ""
     ""
-    ""
     "## Filter More Options!"
 # Title and Introduction
 st.title("Discover Your Perfect Makeup Shade! 💄")
