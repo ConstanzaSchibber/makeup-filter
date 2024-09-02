@@ -8,7 +8,7 @@ import base64
 
 # Set page config
 st.set_page_config(
-    page_title="Makeup Filter App",
+    page_title="Discover Your Perfect Makeup Shade!",
     page_icon="💄",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -95,19 +95,16 @@ st.markdown(
 with st.sidebar:
     "## Filter Makeup Options!"
 # Title and Introduction
-st.title("Makeup Filter App 💄")
+st.title("Discover Your Perfect Makeup Shade! 💄")
 st.markdown("""
-Welcome to the Makeup Filter App! This tool allows you to filter a makeup by color shade, product category, and brand. Use the filters in the sidebar to narrow down the table and explore the data.
+This tool allows you to filter a makeup by color shade 🎨, product category, and brand. 
 """)
 
 # Instructions
 st.header("Instructions")
 st.markdown("""
-1. **Color Palette and Sidebar Filters:** Explore products by selecting a shade in the color pallete below and applying the sidebar filters for type of product and brand.
-2. **View the Table:** The filtered table will be displayed below the filters.
-3. **Explore:** You can experiment with different combinations of filters to explore the dataset.
-
-This app is designed to help you easily navigate through the makeup options by providing dynamic filtering options.
+1. **Color Palette 🎨:** Click the color palette below to filter products by shade.
+2. **Sidebar:** Use the sidebar to narrow down options by product (e.g. blush, lipstick) or brand.
 """)
 
 df = pd.read_csv('./data/df_newcolors_for_streamlit.csv') 
