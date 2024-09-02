@@ -95,7 +95,7 @@ st.markdown(
 # Define the HTML and CSS for the text box
 text_box = """
 <div style="
-    background-color: #d2c7d9; 
+    background-color: #87034e ; 
     padding: 10px; 
     border-radius: 5px; 
     border: 1px solid #ccc;">
@@ -111,8 +111,6 @@ text_box = """
 with st.sidebar:
     # Render the text box in Streamlit
     st.markdown(text_box, unsafe_allow_html=True)
-    ""
-    ""
     ""
     ""
     ""
