@@ -132,11 +132,12 @@ st.markdown("""
 
 df = pd.read_csv('./data/df_newcolors_for_streamlit.csv') 
 df = df[df.ground_truth == 1]
-df = df[['category', 'brand', 'new_median_hex_circle', 'Circle', 'img_url']]
+df = df[['category', 'brand', 'product','new_median_hex_circle', 'Circle', 'img_url']]
 
 df = df.rename(columns={
     'category': 'Makeup Category',
     'brand': 'Brand',
+    'product': 'Description',
     'new_median_hex_circle': 'Shade Group',
     'Circle': 'Product (Predicted) Color',
     'img_url': 'Product'
